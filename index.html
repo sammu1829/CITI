@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CITI Pickles | Homemade Foods</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="CITI Pickles home">
+      <img class="brand-logo" src="assets/citi-logo.jpeg" alt="CITI Pickles logo">
+      <span>
+        <strong>CITI Pickles</strong>
+        <small>Homemade foods</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#products">Menu</a>
+      <a href="#login">Login</a>
+      <a href="#about">About</a>
+      <a href="#order">Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Homemade | Fresh | Traditional Taste</p>
+        <h1>CITI Chicken Pickles and homemade podi with rich traditional flavor.</h1>
+        <p class="hero-text">
+          Fresh non-veg pickles, veg pickles, and spice podi made with carefully selected ingredients and packed for bold home-style taste.
+        </p>
+        <div class="contact-line">
+          <a href="tel:+918074225229">8074225229</a>
+          <span>|</span>
+          <a href="tel:+918639399657">8639399657</a>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#order">Order Now</a>
+          <a class="button secondary" href="#products">View Menu</a>
+        </div>
+      </div>
+
+      <div class="hero-media logo-showcase" aria-label="CITI Pickles logo">
+        <img src="assets/citi-logo.jpeg" alt="CITI Pickles logo">
+        <div class="hero-badge">
+          <strong>Fresh</strong>
+          <span>Homemade</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Business highlights">
+      <span>Homemade</span>
+      <span>Fresh batches</span>
+      <span>Traditional taste</span>
+      <span>Bulk orders available</span>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading">
+        <p class="eyebrow">Our menu</p>
+        <h2>Pickles and podi prices</h2>
+        <p>All prices are listed for 1 kg packs.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-item="Chicken Pickle" data-size="1 kg" data-price="800">
+          <img class="product-image" src="assets/chicken-pickle.webp" alt="Chicken pickle">
+          <span class="tag">Non-veg pickle</span>
+          <h3>Chicken Pickle</h3>
+          <div class="price-row"><span>1 kg</span><strong>₹800</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Mutton Pickle" data-size="1 kg" data-price="2000">
+          <img class="product-image" src="assets/mutton-pickle.webp" alt="Mutton pickle">
+          <span class="tag">Non-veg pickle</span>
+          <h3>Mutton Pickle</h3>
+          <div class="price-row"><span>1 kg</span><strong>₹2000</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Prawns Pickle" data-size="1 kg" data-price="2500">
+          <img class="product-image" src="assets/prawns-pickle.webp" alt="Prawns pickle">
+          <span class="tag">Non-veg pickle</span>
+          <h3>Prawns Pickle</h3>
+          <div class="price-row"><span>1 kg</span><strong>₹2500</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Tomato Pickle" data-size="1 kg" data-price="550">
+          <img class="product-image" src="assets/tomato-pickle.jpg" alt="Tomato pickle">
+          <span class="tag veg">Veg pickle</span>
+          <h3>Tomato Pickle</h3>
+          <div class="price-row"><span>1 kg</span><strong>₹550</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Mango Pickle" data-size="1 kg" data-price="550">
+          <img class="product-image" src="assets/mango-pickle.jpg" alt="Mango pickle">
+          <span class="tag veg">Veg pickle</span>
+          <h3>Mango Pickle</h3>
+          <div class="price-row"><span>1 kg</span><strong>₹550</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Usirikaya (Amla) Pickle" data-size="1 kg" data-price="600">
+          <img class="product-image" src="assets/amla-pickle.jpg" alt="Usirikaya amla pickle">
+          <span class="tag veg">Veg pickle</span>
+          <h3>Usirikaya (Amla) Pickle</h3>
+          <div class="price-row"><span>1 kg</span><strong>₹600</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Lemon Pickle" data-size="1 kg" data-price="350">
+          <img class="product-image" src="assets/lemon-pickle.jpg" alt="Lemon pickle">
+          <span class="tag veg">Veg pickle</span>
+          <h3>Lemon Pickle</h3>
+          <div class="price-row"><span>1 kg</span><strong>₹350</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Pandu Mirapakaya Pickle" data-size="1 kg" data-price="550">
+          <img class="product-image" src="assets/pandu-mirapakaya-pickle.jpg" alt="Pandu mirapakaya pickle">
+          <span class="tag veg">Veg pickle</span>
+          <h3>Pandu Mirapakaya Pickle</h3>
+          <div class="price-row"><span>1 kg</span><strong>₹550</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Karam Podi" data-size="1 kg" data-price="600">
+          <img class="product-image" src="assets/karam-podi.jpg" alt="Karam podi">
+          <span class="tag spice">Spices & podi</span>
+          <h3>Karam Podi</h3>
+          <div class="price-row"><span>1 kg</span><strong>₹600</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Karvepaku Podi" data-size="1 kg" data-price="700">
+          <img class="product-image" src="assets/karvepaku-podi.jpg" alt="Karvepaku podi">
+          <span class="tag spice">Spices & podi</span>
+          <h3>Karvepaku Podi</h3>
+          <p>Curry leaves podi</p>
+          <div class="price-row"><span>1 kg</span><strong>₹700</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Mirchi Karam" data-size="1 kg" data-price="800">
+          <img class="product-image" src="assets/mirchi-karam.webp" alt="Mirchi karam">
+          <span class="tag spice">Spices & podi</span>
+          <h3>Mirchi Karam</h3>
+          <div class="price-row"><span>1 kg</span><strong>₹800</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Nuvvula Karam" data-size="1 kg" data-price="500">
+          <img class="product-image" src="assets/nuvvula-karam.jpg" alt="Nuvvula karam">
+          <span class="tag spice">Spices & podi</span>
+          <h3>Nuvvula Karam</h3>
+          <p>Sesame karam</p>
+          <div class="price-row"><span>1 kg</span><strong>₹500</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Munagaku Podi" data-size="1 kg" data-price="500">
+          <img class="product-image" src="assets/munagaku-podi.jpg" alt="Munagaku podi">
+          <span class="tag spice">Spices & podi</span>
+          <h3>Munagaku Podi</h3>
+          <p>Drumstick leaves</p>
+          <div class="price-row"><span>1 kg</span><strong>₹500</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+
+        <article class="product-card" data-item="Avisaginjala Karam" data-size="1 kg" data-price="500">
+          <img class="product-image" src="assets/avisaginjala-karam.jpg" alt="Avisaginjala karam">
+          <span class="tag spice">Spices & podi</span>
+          <h3>Avisaginjala Karam</h3>
+          <p>Flaxseed karam</p>
+          <div class="price-row"><span>1 kg</span><strong>₹500</strong></div>
+          <button class="cart-button" type="button" onclick="addProductToCart(this)">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="cart-section" id="cart">
+      <div>
+        <p class="eyebrow">Your cart</p>
+        <h2>Review and buy</h2>
+      </div>
+
+      <div class="cart-box">
+        <div id="cartItems" class="cart-items">
+          <p class="empty-cart">Your cart is empty. Add items from the menu.</p>
+        </div>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">₹0</strong>
+        </div>
+        <button class="button primary form-button" id="buyCartButton" type="button">Buy on WhatsApp</button>
+      </div>
+    </section>
+
+    <section class="login-section" id="login">
+      <div class="login-copy">
+        <p class="eyebrow">Customer login</p>
+        <h2>Login before ordering for faster confirmation.</h2>
+        <p>Customers can save their name and phone number on this device. A real secure account system can be added later when you publish the website.</p>
+      </div>
+
+      <form class="login-form" id="loginForm">
+        <label>
+          Name
+          <input type="text" id="loginName" placeholder="Your name" required>
+        </label>
+        <label>
+          Phone number
+          <input type="tel" id="loginPhone" placeholder="Example: 8074225229" required>
+        </label>
+        <label>
+          Password
+          <input type="password" id="loginPassword" placeholder="Minimum 8 characters" minlength="8" required>
+        </label>
+        <button class="button primary form-button" type="submit">Login</button>
+        <button class="button secondary form-button" id="registerButton" type="button">Create Account</button>
+        <button class="button secondary form-button" id="logoutButton" type="button">Logout</button>
+        <p class="login-status" id="loginStatus">Not logged in</p>
+      </form>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">Why customers love it</p>
+        <h2>Homemade food with fresh traditional taste.</h2>
+      </div>
+      <div class="about-points">
+        <p>Every jar is prepared with carefully selected spices, sealed fresh, and packed for strong flavor and proper pickle texture.</p>
+        <ul>
+          <li>Non-veg pickles, veg pickles, and podi varieties available.</li>
+          <li>Balanced spice, salt, tang, and oil for homestyle taste.</li>
+          <li>Order by phone, WhatsApp, or email for price and availability confirmation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="order-copy">
+        <p class="eyebrow">Quick order</p>
+        <h2>Send your order to CITI Pickles.</h2>
+        <p>Call or WhatsApp <strong>8074225229</strong> / <strong>8639399657</strong>, or email <strong>sapcitipickles@gmail.com</strong>.</p>
+        <p>PhonePe payment accepted on <strong>8074225229</strong> and <strong>8639399657</strong> after order confirmation.</p>
+      </div>
+
+      <form class="order-form" id="orderForm">
+        <label>
+          Name
+          <input type="text" id="customerName" placeholder="Your name" required>
+        </label>
+        <label>
+          Item
+          <select id="pickleType" required>
+            <option value="Chicken Pickle">Chicken Pickle</option>
+            <option value="Mutton Pickle">Mutton Pickle</option>
+            <option value="Prawns Pickle">Prawns Pickle</option>
+            <option value="Tomato Pickle">Tomato Pickle</option>
+            <option value="Mango Pickle">Mango Pickle</option>
+            <option value="Usirikaya (Amla) Pickle">Usirikaya (Amla) Pickle</option>
+            <option value="Lemon Pickle">Lemon Pickle</option>
+            <option value="Pandu Mirapakaya Pickle">Pandu Mirapakaya Pickle</option>
+            <option value="Karam Podi">Karam Podi</option>
+            <option value="Karvepaku Podi">Karvepaku Podi</option>
+            <option value="Mirchi Karam">Mirchi Karam</option>
+            <option value="Nuvvula Karam">Nuvvula Karam</option>
+            <option value="Munagaku Podi">Munagaku Podi</option>
+            <option value="Avisaginjala Karam">Avisaginjala Karam</option>
+          </select>
+        </label>
+        <label>
+          Quantity
+          <input type="text" id="quantity" placeholder="Example: 1 kg or 2 kg" required>
+        </label>
+        <label>
+          Delivery area
+          <input type="text" id="address" placeholder="Area / city" required>
+        </label>
+        <button class="button primary form-button" type="submit">Send WhatsApp Order</button>
+        <a class="email-link" href="mailto:sapcitipickles@gmail.com">Email: sapcitipickles@gmail.com</a>
+        <p class="payment-note">PhonePe: 8074225229 / 8639399657</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>CITI Pickles</p>
+    <p>Call: 8074225229 | 8639399657 | PhonePe: 8074225229 / 8639399657 | Email: sapcitipickles@gmail.com</p>
+  </footer>
+
+  <script>
+    const cart = [];
+    const cartItems = document.getElementById("cartItems");
+    const cartTotal = document.getElementById("cartTotal");
+    const buyCartButton = document.getElementById("buyCartButton");
+    let currentCustomer = null;
+
+    async function apiRequest(path, options = {}) {
+      const response = await fetch(path, {
+        credentials: "same-origin",
+        headers: { "Content-Type": "application/json", ...(options.headers || {}) },
+        ...options
+      });
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Something went wrong");
+      }
+
+      return data;
+    }
+
+    function formatPrice(amount) {
+      return `₹${Number.isInteger(amount) ? amount : amount.toFixed(2)}`;
+    }
+
+    function setupPackSizeSelectors() {
+      document.querySelectorAll(".product-card").forEach((card) => {
+        const kgPrice = Number(card.dataset.price);
+        const priceRow = card.querySelector(".price-row");
+        const sizeLabel = priceRow.querySelector("span");
+        const priceLabel = priceRow.querySelector("strong");
+        const selector = document.createElement("label");
+
+        selector.className = "pack-selector";
+        selector.innerHTML = `
+          Pack size
+          <select class="pack-size">
+            <option value="0.25">250 grams - ${formatPrice(kgPrice * 0.25)}</option>
+            <option value="0.5">500 grams - ${formatPrice(kgPrice * 0.5)}</option>
+            <option value="1" selected>1 kg - ${formatPrice(kgPrice)}</option>
+          </select>
+        `;
+
+        priceRow.before(selector);
+
+        selector.querySelector("select").addEventListener("change", (event) => {
+          const multiplier = Number(event.target.value);
+          const sizeText = multiplier === 1 ? "1 kg" : `${multiplier * 1000}g`;
+
+          sizeLabel.textContent = sizeText;
+          priceLabel.textContent = formatPrice(kgPrice * multiplier);
+        });
+      });
+    }
+
+    function updateCart() {
+      if (cart.length === 0) {
+        cartItems.innerHTML = '<p class="empty-cart">Your cart is empty. Add items from the menu.</p>';
+        cartTotal.textContent = "₹0";
+        buyCartButton.disabled = true;
+        return;
+      }
+
+      cartItems.innerHTML = cart.map((item, index) => `
+        <div class="cart-item">
+          <div>
+            <strong>${item.name}</strong>
+            <span>${item.size} x ${item.quantity}</span>
+          </div>
+          <div class="cart-actions">
+            <button type="button" data-action="decrease" data-index="${index}">-</button>
+            <span>${formatPrice(item.price * item.quantity)}</span>
+            <button type="button" data-action="increase" data-index="${index}">+</button>
+            <button type="button" data-action="remove" data-index="${index}">Remove</button>
+          </div>
+        </div>
+      `).join("");
+
+      const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+      cartTotal.textContent = formatPrice(total);
+      buyCartButton.disabled = false;
+    }
+
+    function addProductToCart(button) {
+      const card = button.closest(".product-card");
+      const packSize = card.querySelector(".pack-size");
+      const multiplier = Number(packSize.value);
+      const name = card.dataset.item;
+      const size = multiplier === 1 ? "1 kg" : `${multiplier * 1000}g`;
+      const price = Number(card.dataset.price) * multiplier;
+      const existingItem = cart.find((item) => item.name === name && item.size === size);
+
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        cart.push({ name, size, price, quantity: 1 });
+      }
+
+      button.textContent = "Added";
+      window.setTimeout(() => {
+        button.textContent = "Add to cart";
+      }, 900);
+
+      updateCart();
+      document.getElementById("cart").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    window.addProductToCart = addProductToCart;
+
+    cartItems.addEventListener("click", (event) => {
+      const button = event.target.closest("button");
+      if (!button) return;
+
+      const index = Number(button.dataset.index);
+      const action = button.dataset.action;
+
+      if (action === "increase") cart[index].quantity += 1;
+      if (action === "decrease") cart[index].quantity -= 1;
+      if (action === "remove" || cart[index].quantity <= 0) cart.splice(index, 1);
+
+      updateCart();
+    });
+
+    buyCartButton.addEventListener("click", async () => {
+      if (cart.length === 0) return;
+      if (!currentCustomer) {
+        loginStatus.textContent = "Please login or create an account before buying.";
+        document.getElementById("login").scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+
+      const orderLines = cart.map((item) => `${item.quantity} x ${item.size} ${item.name} - ${formatPrice(item.price * item.quantity)}`);
+      const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+      const order = await apiRequest("/api/orders", {
+        method: "POST",
+        body: JSON.stringify({ items: cart })
+      });
+      const customerLine = `Customer: ${currentCustomer.name}, Phone: ${currentCustomer.phone}\n`;
+      const message = `Hello CITI Pickles, I want to buy:\nOrder ID: ${order.order.id}\n${customerLine}${orderLines.join("\n")}\nTotal: ${formatPrice(total)}\nI can pay by PhonePe after confirmation.`;
+      const whatsappUrl = `https://wa.me/918074225229?text=${encodeURIComponent(message)}`;
+
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    });
+
+    const loginForm = document.getElementById("loginForm");
+    const loginStatus = document.getElementById("loginStatus");
+    const logoutButton = document.getElementById("logoutButton");
+    const registerButton = document.getElementById("registerButton");
+
+    function updateLoginStatus(user = currentCustomer) {
+      currentCustomer = user;
+
+      if (currentCustomer) {
+        loginStatus.textContent = `Logged in as ${currentCustomer.name} (${currentCustomer.phone})`;
+        document.getElementById("loginName").value = currentCustomer.name;
+        document.getElementById("loginPhone").value = currentCustomer.phone;
+      } else {
+        loginStatus.textContent = "Not logged in";
+      }
+    }
+
+    async function loadCurrentUser() {
+      const data = await apiRequest("/api/me");
+      updateLoginStatus(data.user);
+    }
+
+    loginForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const phone = document.getElementById("loginPhone").value.trim();
+      const password = document.getElementById("loginPassword").value;
+
+      try {
+        const data = await apiRequest("/api/login", {
+          method: "POST",
+          body: JSON.stringify({ phone, password })
+        });
+        updateLoginStatus(data.user);
+      } catch (error) {
+        loginStatus.textContent = error.message;
+      }
+    });
+
+    registerButton.addEventListener("click", async () => {
+      const name = document.getElementById("loginName").value.trim();
+      const phone = document.getElementById("loginPhone").value.trim();
+      const password = document.getElementById("loginPassword").value;
+
+      try {
+        const data = await apiRequest("/api/register", {
+          method: "POST",
+          body: JSON.stringify({ name, phone, password })
+        });
+        updateLoginStatus(data.user);
+      } catch (error) {
+        loginStatus.textContent = error.message;
+      }
+    });
+
+    logoutButton.addEventListener("click", async () => {
+      await apiRequest("/api/logout", { method: "POST", body: "{}" });
+      loginForm.reset();
+      updateLoginStatus(null);
+    });
+
+    setupPackSizeSelectors();
+    updateCart();
+    loadCurrentUser().catch(() => updateLoginStatus(null));
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

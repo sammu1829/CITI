@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "id": "f6d62585-2f99-46d7-9032-bf89e0a0f9dd",
+      "name": "Test Customer",
+      "phone": "90000762092",
+      "passwordSalt": "95047c3764c5c13635a8a0f0e659023e",
+      "passwordHash": "e4eeb6ea360c36e9289758a4184af6bf4b88426c70b905de430c0ff0fddbc771",
+      "createdAt": "2026-05-17T05:59:12.827Z"
+    },
+    {
+      "id": "b792b927-1df3-492b-82cb-1672f9b4897f",
+      "name": "shaik samreen",
+      "phone": "9849813189",
+      "passwordSalt": "ceeb29fc418608ccf51e0491b05685bb",
+      "passwordHash": "17f2ad0d117b338cd1b4e05ea45c559e46b009cc45b1965a68341098fd9be6f2",
+      "createdAt": "2026-05-17T06:00:58.585Z"
+    }
+  ],
+  "sessions": [
+    {
+      "tokenHash": "f98630b7d97063b3c37b062e05d58f55452b9d1de41e6aa039f30a9735bd0f11",
+      "userId": "f6d62585-2f99-46d7-9032-bf89e0a0f9dd",
+      "expiresAt": "2026-05-24T05:59:12.837Z"
+    },
+    {
+      "tokenHash": "59350fe0f491f0ae6624127e33ee13e6cde549ddc6b7db0c5c56663c3b327c89",
+      "userId": "b792b927-1df3-492b-82cb-1672f9b4897f",
+      "expiresAt": "2026-05-24T06:00:58.585Z"
+    },
+    {
+      "tokenHash": "0ece429049e9afb5e5515878184ff99ea70661a7e523721d406b95856875387d",
+      "userId": "b792b927-1df3-492b-82cb-1672f9b4897f",
+      "expiresAt": "2026-05-24T06:01:00.109Z"
+    },
+    {
+      "tokenHash": "bef259db33fd4f57e34e8d43b137ca194fe974ceeec499551140189cca78537d",
+      "userId": "b792b927-1df3-492b-82cb-1672f9b4897f",
+      "expiresAt": "2026-05-24T06:01:05.894Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "e2e6c462-339b-4c0c-872c-2e393ea1bbf1",
+      "userId": "f6d62585-2f99-46d7-9032-bf89e0a0f9dd",
+      "customer": {
+        "id": "f6d62585-2f99-46d7-9032-bf89e0a0f9dd",
+        "name": "Test Customer",
+        "phone": "90000762092"
+      },
+      "items": [
+        {
+          "name": "Chicken Pickle",
+          "size": "250g",
+          "quantity": 1,
+          "price": 200
+        }
+      ],
+      "total": 200,
+      "status": "new",
+      "createdAt": "2026-05-17T05:59:12.897Z"
+    },
+    {
+      "id": "63d6b700-154e-4311-a702-0c58a19ce61d",
+      "userId": "b792b927-1df3-492b-82cb-1672f9b4897f",
+      "customer": {
+        "id": "b792b927-1df3-492b-82cb-1672f9b4897f",
+        "name": "shaik samreen",
+        "phone": "9849813189"
+      },
+      "items": [
+        {
+          "name": "Prawns Pickle",
+          "size": "1 kg",
+          "quantity": 1,
+          "price": 2500
+        },
+        {
+          "name": "Nuvvula Karam",
+          "size": "1 kg",
+          "quantity": 1,
+          "price": 500
+        }
+      ],
+      "total": 3000,
+      "status": "new",
+      "createdAt": "2026-05-17T06:02:32.857Z"
+    }
+  ]
+}
